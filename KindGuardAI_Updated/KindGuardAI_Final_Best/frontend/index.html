@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KindGuard AI</title>
+<meta name="theme-color" content="#07090a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c5f24b'/%3E%3Cpath d='M16 6l8 3v6c0 5-3.4 8.6-8 10.5C11.4 23.6 8 20 8 15V9l8-3z' fill='none' stroke='%230b1103' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M12.5 15.5l2.5 2.5 4.5-5' fill='none' stroke='%230b1103' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<div class="app">
+  <aside class="side" id="side" aria-label="Main navigation">
+    <a class="brand" href="#/home" aria-label="KindGuard AI home">
+      <div class="logo" id="logo"></div>
+      <div><b>KindGuard <em>AI</em></b><span>digital safety companion</span></div>
+    </a>
+    <button class="check-btn" id="newChatSide" type="button"></button>
+    <div class="side-label">Workspace</div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-label">Recent chats</div>
+    <div class="recent" id="recent"></div>
+    <div class="side-foot">
+      <div class="conn" id="conn"><i class="dot"></i><div><b id="connTitle">Checking…</b><span id="connSub">Looking for the KindGuard server</span></div></div>
+      <div class="privacy" id="privacy"></div>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <div class="main">
+    <header class="top">
+      <button class="menu" id="menu" type="button" aria-label="Open menu"></button>
+      <nav class="crumbs" aria-label="Breadcrumb"><span>KindGuard</span><span class="sep">/</span><b id="crumb">Chat</b></nav>
+      <div class="pill" role="status"><i class="dot"></i><span class="pillText">Checking</span></div>
+    </header>
+    <main class="page" id="view" tabindex="-1"></main>
+  </div>
+</div>
+<script src="/assets/app.js"></script>
+</body>
+</html>
